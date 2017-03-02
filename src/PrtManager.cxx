@@ -10,8 +10,8 @@ PrtManager * PrtManager::fInstance= NULL;
 
 PrtManager::PrtManager(G4String outfile, G4int runtype)
 {
-  TString filename  = outfile;
-  fOutName = filename; 
+	TString filename  = outfile.c_str();
+	fOutName = filename; 
   fOutName = fOutName.Remove(fOutName.Last('.'));
   fRunType = runtype;
   fRootFile = new TFile(filename,"RECREATE");

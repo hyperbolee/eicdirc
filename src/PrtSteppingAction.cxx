@@ -49,6 +49,16 @@ void PrtSteppingAction::UserSteppingAction(const G4Step* step)
   G4String ParticleName = track->GetDynamicParticle()->
                                  GetParticleDefinition()->GetParticleName();
 
+  // if(ParticleName == "opticalphoton" && track->GetNextVolume())
+  // 	{
+  // 		G4StepPoint* preStepPoint = step->GetPreStepPoint();
+  // 		G4String prevolume = step->GetPreStepPoint()->GetPhysicalVolume()->GetName();
+  // 		G4String postvolume = step->GetPostStepPoint()->GetPhysicalVolume()->GetName();
+		
+  // 		if( prevolume=="wMirror" && postvolume=="wBar")
+  // 			std::cout << "REFLECTED PHOTON" << std::endl;
+  // 	}
+
  
   
   //std::cout<<"ParticleName "<<ParticleName <<std::endl;

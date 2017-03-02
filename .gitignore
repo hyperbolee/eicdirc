@@ -1,3 +1,12 @@
 /build
 /data
+/simulation
+/macro/analysis
+/pdfs
 *~
+*.d
+*.so
+*.gz
+*_mod*
+*_org*
+AutoDict*

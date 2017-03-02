@@ -14,6 +14,7 @@
 #include <TChain.h>
 #include <TCanvas.h>
 #include <TH1F.h>
+#include <TString.h>
 #include "TClonesArray.h"
 
 #include "PrtEvent.h"
@@ -61,6 +62,7 @@ public:
   void SetShift(double val){ fShift = val; }
   void SetDisplayOpt(int val){ fDispalyOpt = val; }
   void SetTimeRes(double val){ fTimeRes = val; }
+  void SetPixelSize(double val){ fPixSize = val; }
 
   // Accessors
   int GetRunType(){ return fRunType; }
@@ -83,6 +85,7 @@ public:
   double GetTimeRes(){ return fTimeRes; }
   TTree *GetTree(){ return fTree; }
   TString GetOutName(){return fOutName;}
+  double GetPixelSize(){ return fPixSize; }
   
 private: 
   int fRunType;
@@ -106,6 +109,7 @@ private:
   int fDispalyOpt;
   double fTimeRes;
   TString fOutName;
+  double fPixSize;
 };
 
 #endif
