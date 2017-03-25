@@ -42,6 +42,7 @@ void formatStats(TCanvas *&canv, TPaveStats *&pavestats, TH1D *&hist,
 	double y2 = 0.95;  pavestats->SetY2NDC(y2); // top
 
 	pavestats->AddText(Form("%.2f#circ track",track));
+	pavestats->AddText(Form("entries = %d",hist->GetEntries());
 	pavestats->AddText(Form("mean = %.3f mrad",mean));
 	pavestats->AddText(Form("SPR = %.3f mrad",spr));
 	pavestats->SetTextSize(0.03);
