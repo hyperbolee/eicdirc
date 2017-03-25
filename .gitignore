@@ -3,6 +3,7 @@
 /simulation
 /macro/analysis
 /pdfs
+/jobs
 *~
 *.d
 *.so
